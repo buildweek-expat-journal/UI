@@ -1,0 +1,43 @@
+/*-----------------------------------------------------------------------------------
+	global.less
+-----------------------------------------------------------------------------------*/
+body {
+    font-family: @body-font;
+    color: @body-color;
+}
+
+h1,h2,h3,h4 {
+    font-family: @heading-font;
+}
+
+strong {
+    font-weight: bold;
+}
+
+header {
+    background-color: @header-background;
+    height: @header-height;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media @tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-family: @primary-menu-font;
+        font-size: 1.6rem;
+        color: @body-color;
+        margin: 0 0.25em;
+
+        @media @tablet {
+            font-size: 1.4rem;
+        }
+
+        span {
+            font-weight: @primary-menu-font-weight;
+        }
+    }
+}
