@@ -1,0 +1,53 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media tablet {
+        width: 70%;
+    }
+
+    @media @desktop {
+        width: 90%;
+    }
+
+    .nav-item {
+        color: ;
+        font-size: ;
+        text-decoration: none;
+
+        &:hover {
+            color: ;
+        }
+    }
+
+    .nav-item,
+    .button {
+        margin: 0 0.25em;
+    }
+
+    .button {
+        text-decoration: none;
+
+        @media @tablet {
+            background-color: @btn-bg-color;
+            border: 0.1em solid @btn-bg-color;
+            border-radius: 0;
+            color: #fff;
+            padding: 0.5em 1em;
+        }
+
+    }
+
+    @media @tablet {
+        .button--secondary {
+            background-color: transparent;
+            color: @btn-bg-color;
+        }
+    }
+
+
+
+
+}
