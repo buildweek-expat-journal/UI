@@ -1,0 +1,40 @@
+/*-----------------------------------------------------------------------------------
+
+	mixins.less
+
+-----------------------------------------------------------------------------------*/
+
+
+.border-radius(@radius: 3px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.box-shadow(@shadow: 0 0 0 1px rgba(0, 0, 0, .15)) {
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    -moz-box-shadow: @shadow;
+    box-shadow: @shadow;
+}
+
+.btn-custom(@bg-color: @btn-bg-color, @border: 1px solid @btn-bg-color) {
+    background-color: @bg-color;
+    border: @border;
+    .border-radius();
+    color: @btn-font-color;
+    font-size: @font-size-base;
+    padding: 2% 3%;
+    text-align: center;
+    width: intrinsic;
+    /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;
+    /* Firefox/Gecko */
+    width: -webkit-max-content;
+    /* Chrome */
+    width: max-content;
+
+    &:hover {
+        background-color: white;
+        color: @btn-bg-color;
+    }
+}
