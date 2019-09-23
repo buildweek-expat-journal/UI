@@ -1,20 +1,18 @@
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width: 95%;
 
-    @media tablet {
+    @media @tablet {
         width: 70%;
     }
 
     @media @desktop {
-        width: 90%;
+        width: 45%;
     }
 
     .nav-item {
-        color: ;
-        font-size: ;
         text-decoration: none;
 
         &:hover {
@@ -24,6 +22,9 @@ nav {
 
     .nav-item,
     .button {
+        font-family: @primary-menu-font;
+        font-size: @primary-menu-font-size;
+        color: @body-color;
         margin: 0 0.25em;
     }
 
@@ -46,8 +47,6 @@ nav {
             color: @btn-bg-color;
         }
     }
-
-
 
 
 }
