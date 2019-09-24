@@ -67,3 +67,48 @@
         }
     }
 }
+
+
+.feature-container {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+
+    .text {
+        padding: 2rem;
+        width: 60%;
+
+        h2 {
+            font-size: @font-size-h4;
+            line-height: @line-height-base;
+
+            @media @tablet {
+                font-size: @font-size-h2;
+            }
+        }
+
+    }
+
+    .photo {
+        width: 40%;
+
+        img {
+            height: auto;
+            width: 400px;
+        }
+    }
+}
+
+.mentions-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #F1F4F6;
+    padding:2rem;
+
+    .mentions__logo {
+        opacity: 0.2;
+        margin: 20px 10px;
+    }
+}
