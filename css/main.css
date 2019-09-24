@@ -346,6 +346,9 @@ nav .button {
 .form-label-group > label:a {
   display: block;
 }
+.focus\:border-green:focus {
+  border-color: #2DA562;
+}
 /* Fallback for Edge
   -------------------------------------------------- */
 @supports (-ms-ime-align: auto) {
