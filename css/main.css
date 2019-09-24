@@ -404,14 +404,11 @@ footer .social__logo {
   height: auto;
   width: 2rem;
 }
-footer .social__logo svg {
-  color: #fff;
+footer .social__logo:hover {
+  opacity: 0.3;
 }
-footer .social__logo svg:hover {
-  color: #289156;
-}
-footer .social__logo svg:active {
-  color: #227d4a;
+footer .social__logo:active {
+  opacity: 0.6;
 }
 /*-----------------------------------------------------------------------------------
 	home-page.less
