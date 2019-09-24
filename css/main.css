@@ -475,6 +475,11 @@ footer .social__logo svg:active {
     margin: 80px 30px;
   }
 }
+@media (min-width: 1000px) {
+  .hero .form {
+    margin: 80px 80px 80px 30px;
+  }
+}
 .hero .form h2 {
   font-size: 2rem;
 }
