@@ -1,12 +1,24 @@
 /*-----------------------------------------------------------------------------------
 	global.less
 -----------------------------------------------------------------------------------*/
+* {
+    // border: .5px solid #bbb !important;
+    max-width: 100%;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 body {
     font-family: @body-font;
     color: @body-color;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: @heading-font;
 }
 
@@ -16,14 +28,16 @@ strong {
 
 header {
     background-color: @header-background;
-    height: @header-height;
+    // height: @header-height;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: @primary-menu-padding;
 
     @media @tablet {
         flex-direction: row;
         justify-content: space-between;
+        align-content: center;
     }
 
     .logo {
