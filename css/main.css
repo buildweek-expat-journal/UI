@@ -398,11 +398,12 @@ footer {
 }
 .hero .text {
   margin: 30px;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0;
 }
 @media (min-width: 500px) {
   .hero .text {
     width: 70%;
+    padding: 1.5rem;
   }
 }
 .hero .text h2 {
@@ -426,8 +427,13 @@ footer {
   border-radius: 4px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
   height: auto;
-  margin: 30px;
+  margin: 30px 30px 80px;
   padding: 1.5rem;
+}
+@media (min-width: 500px) {
+  .hero .form {
+    margin: 30px;
+  }
 }
 .hero .form h2 {
   font-size: 2rem;
