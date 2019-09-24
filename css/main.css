@@ -170,7 +170,6 @@ table {
 	global.less
 -----------------------------------------------------------------------------------*/
 * {
-  border: 0.5px solid #bbb !important;
   max-width: 100%;
 }
 *,
@@ -343,7 +342,6 @@ nav .button {
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: all 0.1s ease-in-out;
-  display: none;
 }
 .form-label-group > label:a {
   display: block;
