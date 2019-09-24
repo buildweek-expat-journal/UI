@@ -395,6 +395,23 @@ footer {
   background-color: #2DA562;
   color: #fff;
   padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .social__logo {
+  opacity: 0.2;
+  height: auto;
+  width: 2rem;
+}
+footer .social__logo svg {
+  color: #fff;
+}
+footer .social__logo svg:hover {
+  color: #289156;
+}
+footer .social__logo svg:active {
+  color: #227d4a;
 }
 /*-----------------------------------------------------------------------------------
 	home-page.less
