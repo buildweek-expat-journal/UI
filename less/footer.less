@@ -15,17 +15,13 @@ footer {
 		height: auto;
 		width: 2rem;
 
-		svg {
-			color: #fff;
-			&:hover {
-				color: darken(@theme-color, 5%);
-				color: darken(@theme-color, 5%);
-			}
-
-			&:active {
-				color: darken(@theme-color, 10%);
-				color: darken(@theme-color, 10%);
-			}
+		&:hover {
+			opacity: 0.3;
 		}
+
+		&:active {
+			opacity: 0.6;
+		}
+
 	}
 }
