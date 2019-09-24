@@ -310,13 +310,42 @@ nav .button {
   position: relative;
   margin-bottom: 1rem;
 }
-.form-label-group:last-child {
-  margin-bottom: 0;
-}
 .form-label-group > input,
 .form-label-group > label {
   height: 3.125rem;
   padding: 0.75rem;
+}
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  pointer-events: none;
+  cursor: text;
+  /* Match the input under the label */
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: all 0.1s ease-in-out;
+}
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+.form-label-group input::placeholder {
+  color: transparent;
 }
 .form-label-group input:not(:placeholder-shown) {
   padding-top: 1.25rem;
@@ -328,6 +357,38 @@ nav .button {
   font-size: 12px;
   color: #777;
 }
+/* Fallback for Edge
+  -------------------------------------------------- */
+@supports (-ms-ime-align: auto) {
+  .form-label-group > label {
+    display: none;
+  }
+  .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+/* Fallback for IE
+  -------------------------------------------------- */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-label-group > label {
+    display: none;
+  }
+  .form-label-group input:-ms-input-placeholder {
+    color: #777;
+  }
+}
+.focus\:border-green:focus {
+  border-color: #2DA562;
+}
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.form-label-group > input,
+.form-label-group > label {
+  height: 3.125rem;
+  padding: 0.75rem;
+}
 .form-label-group > label {
   position: absolute;
   top: 0;
@@ -335,19 +396,40 @@ nav .button {
   display: block;
   width: 100%;
   margin-bottom: 0;
+  /* Override default `<label>` margin */
   line-height: 1.5;
   color: #495057;
   pointer-events: none;
   cursor: text;
+  /* Match the input under the label */
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: all 0.1s ease-in-out;
 }
-.form-label-group > label:a {
-  display: block;
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
 }
-.focus\:border-green:focus {
-  border-color: #2DA562;
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+.form-label-group input::placeholder {
+  color: transparent;
+}
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: 1.25rem;
+  padding-bottom: 0.25rem;
+}
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 12px;
+  color: #777;
 }
 /* Fallback for Edge
   -------------------------------------------------- */
@@ -397,13 +479,17 @@ footer {
   }
 }
 .hero .text {
-  margin: 30px;
   padding: 1.5rem 1.5rem 0;
 }
 @media (min-width: 500px) {
   .hero .text {
     width: 70%;
     padding: 1.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .hero .text {
+    margin: 30px;
   }
 }
 .hero .text h2 {
@@ -447,7 +533,12 @@ footer {
 .feature-container {
   display: flex;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 0.5rem;
+}
+@media (min-width: 500px) {
+  .feature-container {
+    padding: 2rem;
+  }
 }
 .feature-container .text {
   padding: 2rem;
@@ -459,7 +550,12 @@ footer {
 }
 @media (min-width: 500px) {
   .feature-container .text h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1000px) {
+  .feature-container .text h2 {
+    font-size: 3.5rem;
   }
 }
 .feature-container .photo {
