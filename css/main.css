@@ -170,6 +170,7 @@ table {
 	global.less
 -----------------------------------------------------------------------------------*/
 * {
+  border: 0.5px solid #bbb !important;
   max-width: 100%;
 }
 *,
@@ -186,9 +187,6 @@ h2,
 h3,
 h4 {
   font-family: 'Roboto Condensed', serif;
-}
-strong {
-  font-weight: bold;
 }
 header {
   background-color: #F6F2EF;
@@ -217,6 +215,12 @@ header .logo {
 }
 header .logo span {
   font-weight: bold;
+}
+strong {
+  font-weight: bold;
+}
+.text-right {
+  text-align: right;
 }
 nav {
   display: flex;
@@ -339,6 +343,10 @@ nav .button {
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: all 0.1s ease-in-out;
+  display: none;
+}
+.form-label-group > label:a {
+  display: block;
 }
 /* Fallback for Edge
   -------------------------------------------------- */
@@ -393,7 +401,7 @@ footer {
 }
 @media (min-width: 500px) {
   .hero .text {
-    width: 60%;
+    width: 70%;
   }
 }
 .hero .text h2 {
