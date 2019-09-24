@@ -4,73 +4,64 @@
 
 .hero {
     background-image: url('/UI/images/robert-lukeman-zNN6ubHmruI-unsplash.jpg');
+    background-color: rgba(0, 0, 0, .9);
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+
+    @media @tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .text {
+        margin: @margin-small;
+        padding: 1.5rem;
+
+        @media @tablet {
+            width: 60%;
+        }
+
+        h2 {
+            font-size: @font-size-h1;
+            color: #fff;
+            line-height: @line-height-base;
+            text-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+
+
+        }
+
+        p {
+            font-size: @font-size-h3;
+            color: #fff;
+            letter-spacing: .1rem;
+            line-height: @line-height-base;
+            margin-top: 1rem;
+            text-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+        }
+    }
 
     .form {
         background-color: #fff;
-        height: 85%;
-        .border-radius();
+        .border-radius(4px);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .3), 0 2px 4px -1px rgba(0, 0, 0, .01);
+        height: auto;
+        margin: @margin-small;
+        padding: 1.5rem;
 
-        .form-label-group {
-            position: relative;
-            margin-bottom: 1rem;
+        h2 {
+            font-size: @font-size-h2;
         }
 
-        .form-label-group input:not(:placeholder-shown) {
-            padding-top: 1.25rem;
-            padding-bottom: .25rem;
+        .sub-heading {
+            margin-top: .2rem;
         }
 
-        .form-label-group input:not(:placeholder-shown)~label {
-            padding-top: .25rem;
-            padding-bottom: .25rem;
-            font-size: 12px;
-            color: #777;
-        }
-
-        .form-label-group>label {
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: block;
-            width: 100%;
-            margin-bottom: 0;
-            line-height: 1.5;
-            color: #495057;
-            pointer-events: none;
-            cursor: text;
-            border: 1px solid transparent;
-            border-radius: .25rem;
-            transition: all .1s ease-in-out;
-        }
-
-        /* Fallback for Edge
-          -------------------------------------------------- */
-        @supports (-ms-ime-align: auto) {
-            .form-label-group>label {
-                display: none;
-            }
-
-            .form-label-group input::-ms-input-placeholder {
-                color: #777;
-            }
-        }
-
-        /* Fallback for IE
-          -------------------------------------------------- */
-        @media all and (-ms-high-contrast: none),
-        (-ms-high-contrast: active) {
-            .form-label-group>label {
-                display: none;
-            }
-
-            .form-label-group input:-ms-input-placeholder {
-                color: #777;
-            }
+        form {
+            margin-top: .5rem;
         }
     }
 }

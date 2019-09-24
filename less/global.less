@@ -3,6 +3,11 @@
 -----------------------------------------------------------------------------------*/
 * {
     // border: .5px solid #bbb !important;
+    max-width: 100%;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
 }
 
 body {
@@ -32,7 +37,6 @@ header {
     @media @tablet {
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 0;
         align-content: center;
     }
 
