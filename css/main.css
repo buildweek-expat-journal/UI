@@ -472,7 +472,7 @@ footer .social__logo svg:active {
 }
 @media (min-width: 500px) {
   .hero .form {
-    margin: 30px;
+    margin: 80px 30px;
   }
 }
 .hero .form h2 {
