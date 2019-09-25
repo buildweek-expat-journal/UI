@@ -251,6 +251,7 @@ nav .button {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  cursor: pointer;
   text-decoration: none;
 }
 @media (min-width: 500px) {
@@ -289,7 +290,6 @@ nav .button {
   background-color: #2DA562;
   border-color: #2DA562;
   color: #fff;
-  cursor: pointer;
 }
 .button-cta:hover {
   background-color: #289156;
@@ -314,16 +314,16 @@ nav .button {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.form-label-group {
+.form-group {
   position: relative;
   margin-bottom: 1rem;
 }
-.form-label-group > input,
-.form-label-group > label {
+.form-group > input,
+.form-group > label {
   height: 3.125rem;
   padding: 0.75rem;
 }
-.form-label-group > label {
+.form-group > label {
   position: absolute;
   top: 0;
   left: 0;
@@ -340,26 +340,26 @@ nav .button {
   border-radius: 0.25rem;
   transition: all 0.1s ease-in-out;
 }
-.form-label-group input::-webkit-input-placeholder {
+.form-group input::-webkit-input-placeholder {
   color: transparent;
 }
-.form-label-group input:-ms-input-placeholder {
+.form-group input:-ms-input-placeholder {
   color: transparent;
 }
-.form-label-group input::-ms-input-placeholder {
+.form-group input::-ms-input-placeholder {
   color: transparent;
 }
-.form-label-group input::-moz-placeholder {
+.form-group input::-moz-placeholder {
   color: transparent;
 }
-.form-label-group input::placeholder {
+.form-group input::placeholder {
   color: transparent;
 }
-.form-label-group input:not(:placeholder-shown) {
+.form-group input:not(:placeholder-shown) {
   padding-top: 1.25rem;
   padding-bottom: 0.25rem;
 }
-.form-label-group input:not(:placeholder-shown) ~ label {
+.form-group input:not(:placeholder-shown) ~ label {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   font-size: 12px;
@@ -368,20 +368,20 @@ nav .button {
 /* Fallback for Edge
   -------------------------------------------------- */
 @supports (-ms-ime-align: auto) {
-  .form-label-group > label {
+  .form-group > label {
     display: none;
   }
-  .form-label-group input::-ms-input-placeholder {
+  .form-group input::-ms-input-placeholder {
     color: #777;
   }
 }
 /* Fallback for IE
   -------------------------------------------------- */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .form-label-group > label {
+  .form-group > label {
     display: none;
   }
-  .form-label-group input:-ms-input-placeholder {
+  .form-group input:-ms-input-placeholder {
     color: #777;
   }
 }
@@ -529,30 +529,30 @@ footer .social__logo:active {
   background-color: #F1F4F6;
   padding: 2rem 2rem 1rem;
 }
-.inner-container {
+.testimonial-container {
   display: flex;
   flex-direction: column;
   background-color: #F1F4F6;
 }
 @media (min-width: 500px) {
-  .inner-container {
+  .testimonial-container {
     flex-direction: row;
     justify-content: center;
   }
 }
-.inner-container .inner-container__item {
+.testimonial-container .testimonial-container__item {
   padding: 0.5rem 2rem 1rem;
 }
 @media (min-width: 500px) {
-  .inner-container .inner-container__item {
+  .testimonial-container .testimonial-container__item {
     width: 45%;
   }
 }
-.inner-container .inner-container__item p {
+.testimonial-container .testimonial-container__item p {
   font-style: italic;
   font-size: 1.6rem;
 }
-.inner-container .inner-container__item .mentions__logo {
+.testimonial-container .testimonial-container__item .mentions__logo {
   margin-top: 0.5rem;
 }
 .mentions__logo {
