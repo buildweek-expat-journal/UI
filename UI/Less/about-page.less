@@ -1,0 +1,114 @@
+/*-----------------------------------------------------------------------------------
+	about-page.less
+-----------------------------------------------------------------------------------*/
+
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+    @media @tablet {
+        flex-direction: row;
+        //justify-content: space-between;
+    }
+    .top-content{
+        width: 100%;
+        flex-direction: column;
+        h1{
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+    }
+
+
+    .text {
+        flex-direction: column;
+        padding: 1.5rem 1.5rem 0;
+
+        @media @tablet {
+            //width: 70%;
+            //padding: 1.5rem;
+        }
+
+        @media @desktop {
+            margin: @margin-small;
+        }
+        .text-team {
+        flex-direction:row; 
+        }
+
+    }
+}
+
+
+.central-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 3rem;
+
+    @media @tablet {
+        padding: 2rem;
+    }
+
+    .text-team {
+        padding: 2rem;
+        width: 90%;
+        padding: 2rem .5rem;
+            
+            @media @tablet {
+                padding: 2rem;
+            }
+
+             .box{
+                 width:50%;
+                 text-align: center;
+                 font-size: 2rem;
+                 background-color: black;
+                 padding: 1.5rem; 
+                   
+                 } @media (max-width: 500px) {
+                         color:white;
+                     }
+        
+            .text {
+                padding: 2rem;
+                width: 80%;
+        
+                h1 {
+                    font-size: @font-size-h4;
+                    line-height: @line-height-base;
+        
+                    @media @tablet {
+                        font-size: @font-size-h3;
+                    }
+        
+                    @media @desktop {
+                        font-size: @font-size-h1;
+                    }
+                }
+        
+            }
+
+        h1 {
+            font-size: 2rem;
+            line-height: @line-height-base;
+
+            @media @tablet {
+                font-size: @font-size-h3;
+            }
+
+            @media @desktop {
+                font-size: @font-size-h1;
+            }
+        }
+
+    }
+}
+
+
+
