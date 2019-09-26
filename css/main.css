@@ -544,6 +544,8 @@ footer {
 .main-content .top-content {
   width: 100%;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .main-content .top-content h1 {
   align-items: center;
@@ -581,9 +583,8 @@ footer {
   }
 }
 .central-content .text-team {
-  padding: 2rem;
+  padding: 7rem;
   width: 90%;
-  padding: 2rem 0.5rem;
   justify-content: center;
   align-items: center;
 }
