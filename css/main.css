@@ -170,7 +170,6 @@ table {
 	global.less
 -----------------------------------------------------------------------------------*/
 * {
-  border: 0.5px solid red !important;
   max-width: 100%;
 }
 *,
@@ -556,6 +555,10 @@ footer {
   padding: 1.5rem 1.5rem 0;
 }
 @media (min-width: 500px) {
+  .main-content .text {
+    width: 70%;
+    padding: 1.5rem;
+  }
 }
 @media (min-width: 1000px) {
   .main-content .text {
@@ -581,6 +584,8 @@ footer {
   padding: 2rem;
   width: 90%;
   padding: 2rem 0.5rem;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 500px) {
   .central-content .text-team {
@@ -588,16 +593,13 @@ footer {
   }
 }
 .central-content .text-team .box {
-  width: 50%;
+  width: 100%;
   text-align: center;
   font-size: 2rem;
   background-color: black;
-  padding: 1.5rem;
-}
-@media (max-width: 500px) {
-  .central-content .text-team {
-    color: white;
-  }
+  padding: 0.7rem;
+  color: white;
+  border-radius: 12px;
 }
 .central-content .text-team .text {
   padding: 2rem;
