@@ -1,0 +1,163 @@
+/*-----------------------------------------------------------------------------------
+	home-page.less
+-----------------------------------------------------------------------------------*/
+
+.hero {
+    background-image: url('/images/robert-lukeman-zNN6ubHmruI-unsplash.jpg');
+    background-color: rgba(0, 0, 0, .9);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media @tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+
+    .text {
+        padding: 1.5rem 1.5rem 0;
+
+        @media @tablet {
+            width: 70%;
+            padding: 1.5rem;
+        }
+
+        @media @desktop {
+            margin: @margin-small;
+        }
+
+        h2 {
+            font-size: @font-size-h1;
+            color: #fff;
+            line-height: @line-height-base;
+            text-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+
+
+        }
+
+        p {
+            font-size: @font-size-h3;
+            color: #fff;
+            letter-spacing: .1rem;
+            line-height: @line-height-base;
+            margin-top: 1rem;
+            text-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+        }
+    }
+
+    .form {
+        background-color: rgba(255, 255, 255, 0.9);
+        .border-radius(4px);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .3), 0 2px 4px -1px rgba(0, 0, 0, .01);
+        height: auto;
+        margin: @margin-small @margin-small @margin-big;
+        padding: 1.5rem;
+
+        @media @tablet {
+            margin: @margin-big @margin-small;
+        }
+
+        @media @desktop {
+            margin: @margin-big @margin-big @margin-big @margin-small;
+        }
+
+        h2 {
+            font-size: @font-size-h2;
+        }
+
+        .sub-heading {
+            margin-top: .2rem;
+        }
+
+        form {
+            margin-top: .5rem;
+        }
+    }
+}
+
+
+.feature-container {
+    display: flex;
+    align-items: center;
+    padding: 2rem .5rem;
+
+    @media @tablet {
+        padding: 2rem;
+    }
+
+    .text {
+        padding: 2rem;
+        width: 60%;
+
+        h2 {
+            font-size: @font-size-h4;
+            line-height: @line-height-base;
+
+            @media @tablet {
+                font-size: @font-size-h3;
+            }
+
+            @media @desktop {
+                font-size: @font-size-h1;
+            }
+        }
+
+    }
+
+    .photo {
+        width: 40%;
+
+        img {
+            height: auto;
+            width: 400px;
+        }
+    }
+}
+
+.mentions-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #F1F4F6;
+    padding: 2rem 2rem 1rem;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F4F6;
+
+    @media @tablet {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .testimonial-container__item {
+        padding: 0.5rem 2rem 1rem;
+
+        @media @tablet {
+            width: 45%;
+        }
+
+        p {
+            font-style: italic;
+            font-size: @font-size-h4;
+        }
+
+        .mentions__logo {
+            margin-top: .5rem;
+        }
+    }
+
+}
+
+.mentions__logo {
+    opacity: 0.2;
+    margin: 1rem .6rem;
+}
