@@ -236,9 +236,10 @@ nav {
   padding: 0.5rem;
   width: 100%;
 }
-@media tablet {
+@media desktop {
   nav {
     width: auto;
+    justify-content: end !important;
   }
 }
 nav .nav-item {
