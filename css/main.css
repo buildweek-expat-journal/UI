@@ -504,7 +504,7 @@ footer .social__logo:active {
 }
 @media (min-width: 500px) {
   .feature-container {
-    padding: 2rem;
+    padding: 4rem 2rem;
   }
 }
 .feature-container .text {
