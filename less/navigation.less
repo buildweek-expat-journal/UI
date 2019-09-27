@@ -3,6 +3,12 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     padding: .5rem;
+    width: 100%;
+
+    @media desktop {
+        width: auto;
+        justify-content: end !important;
+    }
 
     .nav-item {
         text-decoration: none;
