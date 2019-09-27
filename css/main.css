@@ -385,6 +385,8 @@ nav .button {
     color: #777;
   }
 }
+/* Input Styling
+  -------------------------------------------------- */
 .focus\:border-green:focus {
   border-color: #2DA562;
 }
@@ -554,6 +556,101 @@ footer .social__logo:active {
 }
 .testimonial-container .testimonial-container__item .mentions__logo {
   margin-top: 0.5rem;
+}
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #283C46;
+  padding: 2rem 1rem;
+  color: #fff;
+  text-align: center;
+}
+.cta-container h2 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+.cta-container p {
+  margin-top: 10px;
+}
+.cta-container a {
+  margin-top: 15px;
+}
+.cta-container .stripe {
+  height: 20px;
+  background: #ffffff;
+  display: inline-block;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 20px 30px 15px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 20px 30px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 20px 30px 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 20px 30px 15px rgba(0, 0, 0, 0.1);
+  animation-duration: 3000ms;
+  transition-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@media (min-width: 500px) {
+  .cta-container .stripe .stripe {
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+}
+.cta-container #signup-strp-1 {
+  left: 5%;
+  top: 80px;
+  width: 130px;
+  animation-name: slidein1;
+}
+.cta-container #signup-strp-2 {
+  left: -10px;
+  top: 140px;
+  width: 120px;
+  background: rgba(255, 255, 255, 0.5);
+  animation-name: slidein2;
+}
+.cta-container #signup-strp-4 {
+  left: 5%;
+  top: 200px;
+  width: 170px;
+  animation-name: slidein4;
+}
+@media (min-width: 500px) {
+  .cta-container #signup-strp-4 {
+    left: -10px !important;
+  }
+}
+.cta-container #signup-strp-5 {
+  left: 20%;
+  top: 200px;
+  width: 30px;
+  animation-name: slidein5;
+}
+@media (min-width: 1000px) {
+  .cta-container #signup-strp-5 {
+    display: none;
+  }
+}
+.cta-container #signup-strp-6 {
+  left: -10px;
+  top: 265px;
+  width: 175px;
+  background: #39dcb1;
+  animation-name: slidein6;
+}
+@media (min-width: 500px) {
+  .cta-container #signup-strp-1,
+  .cta-container #signup-strp-2,
+  .cta-container #signup-strp-4,
+  .cta-container #signup-strp-5,
+  .cta-container #signup-strp-6 {
+    left: -10px !important;
+    width: 20px !important;
+    box-shadow: none !important;
+  }
 }
 .mentions__logo {
   opacity: 0.2;
