@@ -530,6 +530,11 @@ footer .social__logo:active {
 .feature-container .photo img {
   height: auto;
   width: 400px;
+  border: 14px solid #fff;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 0px 3px #dce5ea;
 }
 .mentions-container {
   display: flex;
