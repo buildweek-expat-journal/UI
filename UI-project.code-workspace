@@ -1,0 +1,28 @@
+{
+    "folders": [
+		{
+			"name": "buildweek-expat-journal",
+			"uri": "vsls:/"
+		}
+	],
+    "settings": {
+        "files.hotExit": "off",
+        "vsliveshare.join.reload.workspaceId": "AD1FEFB4C1A3F1B6B7E84FAB70133617DD23",
+        "vsliveshare.join.reload.workspaceFolder": "C:\\Users\\Wintr\\AppData\\Local\\Temp\\vsliveshare\\tmp-AD1FEFB4C1A3F1B6B7E84FAB70133617DD23",
+        "vsliveshare.join.correlationId": "",
+        "extensions.ignoreRecommendations": true,
+        "editor.detectIndentation": true,
+        "editor.formatOnSave": false,
+        "files.autoSave": "off",
+        "files.trimTrailingWhitespace": false,
+        "files.insertFinalNewline": false,
+        "files.trimFinalNewlines": false,
+        "typescript.tsc.autoDetect": "off",
+        "jake.autoDetect": "off",
+        "grunt.autoDetect": "off",
+        "gulp.autoDetect": "off",
+        "npm.autoDetect": "off",
+        "debug.allowBreakpointsEverywhere": true,
+        "html.autoClosingTags": false
+    }
+}
