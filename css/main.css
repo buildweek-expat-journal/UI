@@ -258,6 +258,10 @@ nav .button {
   cursor: pointer;
   text-decoration: none;
 }
+.button:hover {
+  text-decoration: none;
+  color: #FFFC88;
+}
 @media (min-width: 500px) {
   .button {
     background-color: #22283A;
@@ -300,6 +304,7 @@ nav .button {
 .button-cta:hover {
   background-color: #289156;
   border-color: #289156;
+  color: #fff;
 }
 .button-cta:active {
   background-color: #227d4a;
