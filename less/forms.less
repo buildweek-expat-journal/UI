@@ -14,18 +14,18 @@
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.form-label-group {
+.form-group {
     position: relative;
     margin-bottom: 1rem;
   }
   
-  .form-label-group > input,
-  .form-label-group > label {
+  .form-group > input,
+  .form-group > label {
     height: 3.125rem;
     padding: .75rem;
   }
   
-  .form-label-group > label {
+  .form-group > label {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,46 +40,53 @@
     border-radius: .25rem;
     transition: all .1s ease-in-out;
   }
-  
-  .form-label-group input::-webkit-input-placeholder {
+ 
+  .form-group input::-webkit-input-placeholder {
     color: transparent;
   }
   
-  .form-label-group input:-ms-input-placeholder {
+  .form-group input:-ms-input-placeholder {
     color: transparent;
   }
   
-  .form-label-group input::-ms-input-placeholder {
+  .form-group input::-ms-input-placeholder {
     color: transparent;
   }
   
-  .form-label-group input::-moz-placeholder {
+  .form-group input::-moz-placeholder {
     color: transparent;
   }
   
-  .form-label-group input::placeholder {
+  .form-group input::placeholder {
     color: transparent;
   }
   
-  .form-label-group input:not(:placeholder-shown) {
+  .form-group input:not(:placeholder-shown) {
     padding-top: 1.25rem;
     padding-bottom: .25rem;
   }
   
-  .form-label-group input:not(:placeholder-shown) ~ label {
+  .form-group input:not(:placeholder-shown) ~ label {
     padding-top: .25rem;
     padding-bottom: .25rem;
     font-size: 12px;
     color: #777;
   }
+
+ /* Input Focus Styling
+  -------------------------------------------------- */
+  .focus\:border-green:focus {
+    border-color: @theme-color;
+}
   
   /* Fallback for Edge
   -------------------------------------------------- */
   @supports (-ms-ime-align: auto) {
-    .form-label-group > label {
+   
+    .form-group > label {
       display: none;
     }
-    .form-label-group input::-ms-input-placeholder {
+    .form-group input::-ms-input-placeholder {
       color: #777;
     }
   }
@@ -87,15 +94,10 @@
   /* Fallback for IE
   -------------------------------------------------- */
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .form-label-group > label {
+    .form-group > label {
       display: none;
     }
-    .form-label-group input:-ms-input-placeholder {
+    .form-group input:-ms-input-placeholder {
       color: #777;
     }
   }
-
-  .focus\:border-green:focus {
-    border-color: @theme-color;
-}
-  

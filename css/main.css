@@ -218,6 +218,9 @@ header .logo span {
 strong {
   font-weight: bold;
 }
+.text-center {
+  text-align: center;
+}
 .text-right {
   text-align: right;
 }
@@ -244,27 +247,11 @@ nav .button {
     margin: 0 0.5rem;
   }
 }
-nav .nav-header {
-  text-decoration: none;
-}
-nav .nav-header,
-nav .button {
-  font-family: 'Roboto Condensed', serif;
-  font-size: 1rem;
-  letter-spacing: normal;
-  color: #283c46;
-  margin: 0.5rem 1rem 0;
-}
-@media (min-width: 500px) {
-  nav .nav-header,
-  nav .button {
-    margin: 0 0.5rem;
-  }
-}
 .button {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  cursor: pointer;
   text-decoration: none;
 }
 @media (min-width: 500px) {
@@ -303,7 +290,6 @@ nav .button {
   background-color: #2DA562;
   border-color: #2DA562;
   color: #fff;
-  cursor: pointer;
 }
 .button-cta:hover {
   background-color: #289156;
@@ -328,16 +314,16 @@ nav .button {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.form-label-group {
+.form-group {
   position: relative;
   margin-bottom: 1rem;
 }
-.form-label-group > input,
-.form-label-group > label {
+.form-group > input,
+.form-group > label {
   height: 3.125rem;
   padding: 0.75rem;
 }
-.form-label-group > label {
+.form-group > label {
   position: absolute;
   top: 0;
   left: 0;
@@ -354,26 +340,26 @@ nav .button {
   border-radius: 0.25rem;
   transition: all 0.1s ease-in-out;
 }
-.form-label-group input::-webkit-input-placeholder {
+.form-group input::-webkit-input-placeholder {
   color: transparent;
 }
-.form-label-group input:-ms-input-placeholder {
+.form-group input:-ms-input-placeholder {
   color: transparent;
 }
-.form-label-group input::-ms-input-placeholder {
+.form-group input::-ms-input-placeholder {
   color: transparent;
 }
-.form-label-group input::-moz-placeholder {
+.form-group input::-moz-placeholder {
   color: transparent;
 }
-.form-label-group input::placeholder {
+.form-group input::placeholder {
   color: transparent;
 }
-.form-label-group input:not(:placeholder-shown) {
+.form-group input:not(:placeholder-shown) {
   padding-top: 1.25rem;
   padding-bottom: 0.25rem;
 }
-.form-label-group input:not(:placeholder-shown) ~ label {
+.form-group input:not(:placeholder-shown) ~ label {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   font-size: 12px;
@@ -382,20 +368,20 @@ nav .button {
 /* Fallback for Edge
   -------------------------------------------------- */
 @supports (-ms-ime-align: auto) {
-  .form-label-group > label {
+  .form-group > label {
     display: none;
   }
-  .form-label-group input::-ms-input-placeholder {
+  .form-group input::-ms-input-placeholder {
     color: #777;
   }
 }
 /* Fallback for IE
   -------------------------------------------------- */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .form-label-group > label {
+  .form-group > label {
     display: none;
   }
-  .form-label-group input:-ms-input-placeholder {
+  .form-group input:-ms-input-placeholder {
     color: #777;
   }
 }
@@ -409,6 +395,20 @@ footer {
   background-color: #2DA562;
   color: #fff;
   padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .social__logo {
+  opacity: 0.2;
+  height: auto;
+  width: 2rem;
+}
+footer .social__logo:hover {
+  opacity: 0.3;
+}
+footer .social__logo:active {
+  opacity: 0.6;
 }
 /*-----------------------------------------------------------------------------------
 	home-page.less
@@ -469,7 +469,12 @@ footer {
 }
 @media (min-width: 500px) {
   .hero .form {
-    margin: 30px;
+    margin: 80px 30px;
+  }
+}
+@media (min-width: 1000px) {
+  .hero .form {
+    margin: 80px 80px 80px 30px;
   }
 }
 .hero .form h2 {
@@ -522,115 +527,35 @@ footer {
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: #F1F4F6;
-  padding: 2rem;
+  padding: 2rem 2rem 1rem;
 }
-.mentions-container .mentions__logo {
-  opacity: 0.2;
-  margin: 20px 10px;
-}
-/*-----------------------------------------------------------------------------------
-	about-page.less
------------------------------------------------------------------------------------*/
-.main-content {
+.testimonial-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  background-color: #F1F4F6;
 }
 @media (min-width: 500px) {
-  .main-content {
+  .testimonial-container {
     flex-direction: row;
+    justify-content: center;
   }
 }
-.main-content .top-content {
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.main-content .top-content h1 {
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
-.main-content .text {
-  flex-direction: column;
-  padding: 1.5rem 1.5rem 0;
+.testimonial-container .testimonial-container__item {
+  padding: 0.5rem 2rem 1rem;
 }
 @media (min-width: 500px) {
-  .main-content .text {
-    width: 70%;
-    padding: 1.5rem;
+  .testimonial-container .testimonial-container__item {
+    width: 45%;
   }
 }
-@media (min-width: 1000px) {
-  .main-content .text {
-    margin: 30px;
-  }
-}
-.main-content .text .text-team {
-  flex-direction: row;
-}
-.central-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 2rem 3rem;
-}
-@media (min-width: 500px) {
-  .central-content {
-    padding: 2rem;
-  }
-}
-.central-content .text-team {
-  padding: 7rem;
-  width: 90%;
-  justify-content: center;
-  align-items: center;
-}
-@media (min-width: 500px) {
-  .central-content .text-team {
-    padding: 2rem;
-  }
-}
-.central-content .text-team .box {
-  width: 100%;
-  text-align: center;
-  font-size: 2rem;
-  background-color: black;
-  padding: 0.7rem;
-  color: white;
-  border-radius: 12px;
-}
-.central-content .text-team .text {
-  padding: 2rem;
-  width: 80%;
-}
-.central-content .text-team .text h1 {
+.testimonial-container .testimonial-container__item p {
+  font-style: italic;
   font-size: 1.6rem;
-  line-height: 1.2;
 }
-@media (min-width: 500px) {
-  .central-content .text-team .text h1 {
-    font-size: 1.8rem;
-  }
+.testimonial-container .testimonial-container__item .mentions__logo {
+  margin-top: 0.5rem;
 }
-@media (min-width: 1000px) {
-  .central-content .text-team .text h1 {
-    font-size: 3.5rem;
-  }
-}
-.central-content .text-team h1 {
-  font-size: 2rem;
-  line-height: 1.2;
-}
-@media (min-width: 500px) {
-  .central-content .text-team h1 {
-    font-size: 1.8rem;
-  }
-}
-@media (min-width: 1000px) {
-  .central-content .text-team h1 {
-    font-size: 3.5rem;
-  }
+.mentions__logo {
+  opacity: 0.2;
+  margin: 1rem 0.6rem;
 }
