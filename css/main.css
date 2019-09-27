@@ -212,6 +212,10 @@ header .logo {
     font-size: 1.4rem;
   }
 }
+header .logo a {
+  color: #FFFC88;
+  text-decoration: none;
+}
 header .logo span {
   font-weight: bold;
   color: #fff;
