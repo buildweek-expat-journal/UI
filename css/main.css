@@ -385,6 +385,8 @@ nav .button {
     color: #777;
   }
 }
+/* Input Styling
+  -------------------------------------------------- */
 .focus\:border-green:focus {
   border-color: #2DA562;
 }
@@ -554,6 +556,25 @@ footer .social__logo:active {
 }
 .testimonial-container .testimonial-container__item .mentions__logo {
   margin-top: 0.5rem;
+}
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #283C46;
+  padding: 2rem 1rem;
+  color: #fff;
+  text-align: center;
+}
+.cta-container h2 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+.cta-container p {
+  margin-top: 10px;
+}
+.cta-container a {
+  margin-top: 15px;
 }
 .mentions__logo {
   opacity: 0.2;
